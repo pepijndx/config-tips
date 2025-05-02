@@ -9,37 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="/">
-                    <img src="./images/logo.png" alt="Agile Academy Logo">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Opleidingen</a></li>
-                    <li><a href="#">Diensten</a></li>
-                    <li class="active"><a href="#">Blog</a></li>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-cta">
-                <a href="#" class="btn btn-primary">Gratis consult</a>
-            </div>
-            <div class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-
     <main>
+        <header data-include="navbar"></header>
+
         <section class="hero-section">
             <div class="container">
                 <div class="breadcrumbs">
@@ -226,61 +201,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <p>Wij helpen organisaties beter te worden in Agile werken met trainingen, coaching en consultancy.</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon">LinkedIn</a>
-                        <a href="#" class="social-icon">Twitter</a>
-                        <a href="#" class="social-icon">Facebook</a>
-                        <a href="#" class="social-icon">Instagram</a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Diensten</h4>
-                    <ul>
-                        <li><a href="#">Trainingen</a></li>
-                        <li><a href="#">Coaching</a></li>
-                        <li><a href="#">Consultancy</a></li>
-                        <li><a href="#">In-company workshops</a></li>
-                        <li><a href="#">Agile transformatie</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Informatie</h4>
-                    <ul>
-                        <li><a href="#">Over ons</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Klantverhalen</a></li>
-                        <li><a href="#">Vacatures</a></li>
-                        <li><a href="#">Kennisbank</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <address>
-                        <p>Agile Academy B.V.</p>
-                        <p>Stationsplein 45</p>
-                        <p>3013 AK Rotterdam</p>
-                        <p>Tel: 010-12345678</p>
-                        <p>E-mail: info@agile-academy.nl</p>
-                    </address>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>© 2025 Agile Academy B.V. - Alle rechten voorbehouden</p>
-                </div>
-                <div class="legal-links">
-                    <a href="#">Algemene voorwaarden</a>
-                    <a href="#">Privacybeleid</a>
-                    <a href="#">Cookiebeleid</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer data-include="footer"></footer>
+
 
     <div class="newsletter-popup">
         <div class="popup-content">
