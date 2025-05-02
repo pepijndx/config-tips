@@ -3,93 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werkproces ICT Examen 2025</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-        }
-        .sidebar {
-            min-height: 100vh;
-            background-color: #f8f9fa;
-        }
-        .content {
-            padding: 2rem;
-        }
-        h1, h2, h3 {
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Agile Academy | Effectieve User Stories Schrijven: Een Complete Gids</title>
+    <meta name="description" content="Leer hoe je effectieve user stories schrijft die duidelijk, bruikbaar en waardevol zijn voor je agile team. Inclusief voorbeelden en templates.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-3 col-lg-2 d-md-block sidebar">
-            <div class="position-sticky pt-3">
-                <h5 class="text-center mt-3">Inhoud</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#inleiding">Inleiding</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#epic">Epic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#userstories">User Stories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#definitionofdone">Definition of Done</a></li>
-                </ul>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/logo.png" alt="Agile Academy Logo">
+                </a>
             </div>
-        </nav>
-        <main class="col-md-9 ms-sm-auto col-lg-10 content">
-            <h1>Werkproces ICT Examen 2025</h1>
-
-            <section id="inleiding">
-                <h2>Inleiding</h2>
-                <p>In dit document worden de verschillende user stories besproken waarbij ook de acceptance criteria en de prioriteit zijn vermeld per onderdeel. Verder in het document staat de Definition of Done opgenomen die wij hanteren om het beste resultaat te behalen.</p>
-            </section>
-
-            <section id="epic">
-                <h2>Epic</h2>
-                <p><strong>E1:</strong> De applicatie is gespecialiseerd in Apk-keuringen en kleine reparaties. Het systeem is een webapplicatie en omvat een registratiesysteem, een afspraakbeheersysteem, een planningsysteem, notitie-functionaliteit, e-mailservice en facturatie.</p>
-            </section>
-
-            <section id="features">
-                <h2>Features</h2>
-                <h3>Manager (Hoofdbeheerder)</h3>
+            <nav>
                 <ul>
-                    <li>F1: Authenticatie & Autorisatie</li>
-                    <li>F2: Afsprakenbeheer</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Opleidingen</a></li>
+                    <li><a href="#">Diensten</a></li>
+                    <li class="active"><a href="#">Blog</a></li>
+                    <li><a href="#">Over ons</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#" class="btn btn-primary">Gratis consult</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
 
-                <h3>Automonteur (Interne gebruikers)</h3>
-                <ul>
-                    <li>F3: Werkorders</li>
-                    <li>F4: Statistieken en Trends</li>
-                </ul>
-            </section>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="/">Home</a> > <a href="/blog">Blog</a> > Eisen&nbsp;& Wensen-document
+                </div>
+                <h1>Eisen & Wensen-document: een complete template voor epics, features en user stories</h1>
+                <div class="post-meta">
+                    <div class="author">
+                        <img src="./images/emma.jpeg" alt="Emma van der Berg" class="author-img">
+                        <span>Door Emma van der Berg</span>
+                    </div>
+                    <div class="date">Gepubliceerd op 2 mei 2025</div>
+                    <div class="reading-time">Leestijd: 9 minuten</div>
+                </div>
+                <img src="./images/meeting.jpg" alt="Team vult een Eisen- en Wensen-document tijdens refinement" class="featured-image">
+            </div>
+        </section>
 
-            <section id="userstories">
-                <h2>User Stories</h2>
-                <h3>Manager (Hoofdbeheerder)</h3>
-                <h4>F1: Authenticatie & Autorisatie</h4>
-                <p><strong>US1:</strong> Als manager moet ik kunnen inloggen met mijn inloggegevens zodat ik toegang krijg tot de applicatie met verhoogde rechten.</p>
-                <p><strong>Acceptance Criteria:</strong></p>
-                <ul>
-                    <li>[AC1]: De e-mail en wachtwoord zijn verplichte velden</li>
-                    <li>[AC2]: De manager moet worden doorgestuurd naar de homepagina na het inloggen</li>
-                </ul>
-                <p><strong>Prioriteit:</strong> 1 (Must) Het is essentieel dat de manager kan inloggen zodat hij/zij toegang heeft tot het systeem.</p>
-            </section>
+        <!-- ===== CONTENT ===== -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="article-content">
 
-            <section id="definitionofdone">
-                <h2>Definition of Done</h2>
-                <ul>
-                    <li>Code is geschreven en voldoet aan de code standaarden.</li>
-                    <li>De code is gereviewed door minstens één ander teamlid.</li>
-                    <li>De applicatie is duidelijk gedocumenteerd.</li>
-                    <li>Alle functionaliteiten hebben een unit test en slagen.</li>
-                    <li>Er wordt voldaan aan de acceptance criteria.</li>
-                    <li>De code is efficiënt en bevat geen prestatieproblemen.</li>
-                </ul>
-            </section>
-        </main>
+                        <!-- INLEIDING -->
+                        <div class="intro">
+                            <p>Het Eisen- & Wensen-document vormt de ruggengraat van elk software-project: het beschrijft 
+                            epics, features, user stories en de Definition of Done op één centrale plaats. Hiermee ontstaat 
+                            een gedeeld begrip van <em>wat</em> gebouwd wordt en <em>waarom</em>. In deze gids vind je een
+                            kant-en-klare opzet met voorbeelden die je direct kunt kopiëren naar je eigen project.</p>
+                        </div>
+
+                        <!-- INHOUDSOPGAVE -->
+                        <div class="table-of-contents">
+                            <h2>Inhoud</h2>
+                            <ul>
+                                <li><a href="#voorblad">Voorblad</a></li>
+                                <li><a href="#epic">Epics</a></li>
+                                <li><a href="#features">Features per rol</a></li>
+                                <li><a href="#userstories">User stories & acceptance-criteria</a></li>
+                                <li><a href="#dod">Definition of Done</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- VOORBLAD -->
+                        <h2 id="voorblad">Voorblad</h2>
+                        <p>Het voorblad bevat informatie zoals:</p>
+                        <ul>
+                            <li><strong>Werkproces: Plannen van werkzaamheden en bewaken van de voortgang</strong></li>
+                            <li><strong>Code: B1-K1-W1</strong></li>
+                            <li><strong>Examenopdracht 1: onderdelen 1 en 2</strong></li>
+                            <li><strong>Individuele opdracht.</strong></li>
+                            <li><strong>Naam: Jouw naam</strong></li>
+                            <li><strong>Klas: Jouw klas.</strong></li>
+                        </ul>
+
+                        <p>Deze informatie zorgt dat het document mooi overzichtelijk is voor de docent.</p>
+
+                        <!-- EPICS -->
+                        <h2 id="epic">Epics</h2>
+                        <p>Noteer elke epic als <code>E&#8209;nummer</code> met een korte beschrijving. Bijvoorbeeld:</p>
+                        <div class="example-box">
+                            <h3>Voorbeeld Epic</h3>
+                            <p><strong>E1:</strong> Registratiesysteem – de applicatie beheert aan-/afmeldingen voor apk-keuringen en kleine reparaties.</p>
+                        </div>
+
+                        <!-- FEATURES -->
+                        <h2 id="features">Features per rol</h2>
+                        <p>Schrijf per gebruikersrol de features op als <code>F&#8209;nummer</code>:</p>
+
+                        <div class="invest-grid">
+                            <div class="invest-item">
+                                <h3>Manager (Hoofdbeheerder)</h3>
+                                <p>F1 Authenticatie &amp; autorisatie<br>
+                                   F2 Afsprakenbeheer</p>
+                            </div>
+                            <div class="invest-item">
+                                <h3>Automonteur (Interne gebruiker)</h3>
+                                <p>F3 Werkorders<br>
+                                   F4 Statistieken &amp; trends</p>
+                            </div>
+                            <div class="invest-item">
+                                <h3>Klant (Externe gebruiker)</h3>
+                                <p>F5 Online afspraken boeken<br>
+                                   F6 Facturatie &amp; betalingen</p>
+                            </div>
+                        </div>
+                        <p>Deze indeling maakt direct duidelijk welke waarde elke rol ontvangt.</p>
+
+                        <!-- USER STORIES -->
+                        <h2 id="userstories">User stories &amp; acceptance-criteria</h2>
+                        <p>Structureer een user story altijd als:</p>
+                        <div class="template-box">
+                            <p><strong>Als</strong> [rol],<br>
+                               <strong>wil ik</strong> [functionaliteit],<br>
+                               <strong>zodat</strong> [reden].</p>
+                        </div>
+
+                        <div class="example-box good">
+                            <h3>Voorbeeld user story US1</h3>
+                            <p><em>Manager – F1 Authenticatie &amp; Autorisatie</em></p>
+                            <p>Als manager wil ik kunnen inloggen met mijn inlog­gegevens zodat ik toegang krijg tot de applicatie met verhoogde rechten.</p>
+
+                            <p><strong>Acceptatiecriteria:</strong></p>
+                            <ul>
+                                <li>[AC1] E-mail en wachtwoord zijn verplichte velden</li>
+                                <li>[AC2] Na succesvol inloggen wordt de manager doorgestuurd naar de homepagina</li>
+                            </ul>
+
+                            <p><strong>Prioriteit:</strong> 1 (Must) – Essentieel voor toegang tot het systeem.</p>
+                        </div>
+
+                        <p>Gebruik de <strong>MoSCoW-methode</strong> (Must, Should, Could, Won’t) om de prioriteit per story
+                        vast te leggen.</p>
+
+                        <!-- DEFINITION OF DONE -->
+                        <h2 id="dod">Definition of Done (DoD)</h2>
+                        <p>Alle user stories zijn pas “done” wanneer ze voldoen aan de volgende checklist:</p>
+                        <ul>
+                            <li>Code voldoet aan de afgesproken standaarden en is gerespecteerd in een pull-request</li>
+                            <li>Minstens één teamlid heeft de code gereviewd en alle feedback is verwerkt</li>
+                            <li>Functionele en technische documentatie is bijgewerkt</li>
+                            <li>Alle unit-tests slagen en nieuwe functionaliteit heeft eigen tests</li>
+                            <li>Alle acceptance-criteria van de user story zijn behaald</li>
+                            <li>De oplossing is performance-bewust en introduceert geen regressies</li>
+                        </ul>
+                        <p>Door deze definitie op te nemen voorkom je interpretatie­verschillen over wat “af” is.</p>
+
+                    </div>
+
+                    <!-- ===== SIDEBAR ONGEWIJZIGD ===== -->
+                    <aside class="sidebar">
+                        <div class="sidebar-box author-box">
+                            <img src="./images/emma.jpeg" alt="Emma van der Berg" class="author-img-large">
+                            <h3>Emma van der Berg</h3>
+                            <p>Agile Coach &amp; Scrum Master met 8+ jaar ervaring in diverse sectoren. Gespecialiseerd in agile transformaties en team-coaching.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">Twitter</a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-box popular-posts">
+                            <h3>Populaire artikelen</h3>
+                            <ul>
+                                <li><a href="#"><h4>10 tips voor betere sprint retrospectives</h4><span>3 min leestijd</span></a></li>
+                                <li><a href="#"><h4>Product Backlog Refinement: een complete gids</h4><span>7 min leestijd</span></a></li>
+                                <li><a href="#"><h4>Wat doet een Scrum Master echt de hele dag?</h4><span>5 min leestijd</span></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GERELATEERDE ARTIKELEN BLIJFT HETZELFDE ===== -->
+        <section class="related-posts">
+            <div class="container">
+                <h2>Gerelateerde artikelen</h2>
+                <div class="post-grid">
+                    <div class="post-card">
+                        <div class="post-content">
+                            <h3>Zo maak je je refinement sessies effectiever</h3>
+                            <p>Praktische tips om meer waarde te halen uit je backlog refinement.</p>
+                            <a href="#" class="read-more">Lees meer →</a>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-content">
+                            <h3>Definition of Done: waarom dit essentieel is</h3>
+                            <p>Alles over het opstellen en gebruiken van een krachtige DoD.</p>
+                            <a href="#" class="read-more">Lees meer →</a>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-content">
+                            <h3>Technical Debt: de verborgen kosten van haastwerk</h3>
+                            <p>Hoe voorkom je dat technical debt je project vertraagt?</p>
+                            <a href="#" class="read-more">Lees meer →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <p>Wij helpen organisaties beter te worden in Agile werken met trainingen, coaching en consultancy.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Diensten</h4>
+                    <ul>
+                        <li><a href="#">Trainingen</a></li>
+                        <li><a href="#">Coaching</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="#">In-company workshops</a></li>
+                        <li><a href="#">Agile transformatie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informatie</h4>
+                    <ul>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Klantverhalen</a></li>
+                        <li><a href="#">Vacatures</a></li>
+                        <li><a href="#">Kennisbank</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>Agile Academy B.V.</p>
+                        <p>Stationsplein 45</p>
+                        <p>3013 AK Rotterdam</p>
+                        <p>Tel: 010-12345678</p>
+                        <p>E-mail: info@agile-academy.nl</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2025 Agile Academy B.V. - Alle rechten voorbehouden</p>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Algemene voorwaarden</a>
+                    <a href="#">Privacybeleid</a>
+                    <a href="#">Cookiebeleid</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="newsletter-popup">
+        <div class="popup-content">
+            <button class="close-popup">×</button>
+            <h3>Blijf op de hoogte!</h3>
+            <p>Schrijf je in voor onze nieuwsbrief en ontvang maandelijks de beste Agile-tips en gratis resources.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Je e-mailadres" required>
+                <button type="submit" class="btn btn-primary">Inschrijven</button>
+            </form>
+            <p class="small">We respecteren je privacy. Je kunt je altijd uitschrijven.</p>
+        </div>
     </div>
-</div>
+
+    <script>
+        // Basic JavaScript for demonstration purposes
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            if (mobileMenuToggle && nav) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    mobileMenuToggle.classList.toggle('active');
+                });
+            }
+
+            // Show newsletter popup after 30 seconds
+            setTimeout(function() {
+                const newsletterPopup = document.querySelector('.newsletter-popup');
+                if (newsletterPopup) {
+                    newsletterPopup.classList.add('active');
+                }
+            }, 30000);
+
+            // Close newsletter popup
+            const closePopup = document.querySelector('.close-popup');
+            if (closePopup) {
+                closePopup.addEventListener('click', function() {
+                    const newsletterPopup = document.querySelector('.newsletter-popup');
+                    if (newsletterPopup) {
+                        newsletterPopup.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
