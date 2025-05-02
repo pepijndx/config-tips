@@ -1,0 +1,2 @@
+# config-tips
+Examen geheugensteuntjes
